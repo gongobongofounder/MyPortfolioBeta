@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atrajit Sarkar - Blogs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">
+                <a href="index.html">My Portfolio</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="blogs.html" class="active">Blogs</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li class="theme-switch">
+                    <button id="theme-toggle" aria-label="Toggle theme">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Blogs Header -->
+    <section class="blogs-header">
+        <div class="container">
+            <h1>My Blogs</h1>
+            <p>Explore my thoughts, research, and writings on mathematics, computer science, and more</p>
+            <div class="math-symbols">
+                <span class="symbol">∫</span>
+                <span class="symbol">∑</span>
+                <span class="symbol">λ</span>
+                <span class="symbol">∞</span>
+                <span class="symbol">∂</span>
+            </div>
+            <div class="code-symbols">
+                <span class="symbol">&lt;/&gt;</span>
+                <span class="symbol">{}</span>
+                <span class="symbol">[]</span>
+                <span class="symbol">()</span>
+            </div>
+            <div class="breadcrumb" id="blog-breadcrumb">
+                <a href="blogs.html">Blogs</a>
+                <span id="current-folder"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Content -->
+    <section class="blogs-content">
+        <div class="container">
+            <div class="blogs-grid" id="blogs-container">
+                <!-- Blogs will be dynamically loaded here -->
+                <div class="loading-spinner" id="loading-spinner">
+                    <i class="fas fa-spinner fa-spin"></i>
+                    <p>Loading content...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p id="footer-text">Loading...</p>
+        </div>
+    </footer>
+
+    <script type="module" src="js/blogs.js"></script>
+    <script>
+        // Initialize theme
+        document.addEventListener('DOMContentLoaded', () => {
+            // Check for saved theme preference or default to light theme
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            updateThemeIcon(savedTheme);
+
+            const themeToggle = document.getElementById('theme-toggle');
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'light' ? 'dark' : 'light';
+                
+                document.documentElement.setAttribute('data-theme', newTheme);
+                localStorage.setItem('theme', newTheme);
+                updateThemeIcon(newTheme);
+            });
+        });
+
+        function updateThemeIcon(theme) {
+            const icon = document.querySelector('#theme-toggle i');
+            icon.className = theme === 'light' ? 'fas fa-moon' : 'fas fa-sun';
+        }
+
+        // Load footer text
+        async function loadFooter() {
+            try {
+                const footerResponse = await fetch('data/footer.txt');
+                const footerText = await footerResponse.text();
+                document.getElementById('footer-text').textContent = footerText;
+            } catch (error) {
+                console.error('Error loading footer:', error);
+            }
+        }
+
+        loadFooter();
+    </script>
+</body>
+
+</html>

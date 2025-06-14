@@ -1,0 +1,31 @@
+<h3>Mathematical Background</h3>
+<p>I am Atrajit, a passionate mathematician and software developer, having completed my <strong>MSc in Mathematics from IIT Delhi</strong>. My primary academic interests lie in <strong>analysis, number theory, and algebra</strong>, and I am actively preparing for <strong>PhD admissions in August 2025</strong>.</p>
+<p>I have completed a project on Morse theory under the supervision of Dr. Biplab Basak. You can find my project in my first blog.</p>
+<br>
+<h3>Technical and Coding Background</h3>
+<p>Beyond mathematics, I have a deep passion for programming and technology. I specialize in <strong>Jetpack Compose for Android development</strong>, with hands-on experience in <strong>chat applications, GitHub-integrated content fetching, and local database management using Hilt</strong>. Additionally, I have a strong command over <strong>C++</strong>, where I teach students and explore areas like <strong>3D simulation</strong>. My programming expertise also extends to <strong>Python automation</strong>, including <strong>WhatsApp auto-replies, PDF conversions, and file handling</strong>.</p>
+<br>
+<h3>Teaching Background</h3>
+<ul>
+    <li><strong>Mentoring students</strong> in mobile app development, guiding them through beginner and intermediate-level projects.</li>
+    <li>Experience in <strong>networking applications</strong>, particularly in establishing <strong>internet-based communication between app instances</strong>.</li>
+    <li>Taught BSc and MSc students in:
+        <ul>
+            <li>Real Analysis</li>
+            <li>Modern Algebra</li>
+            <li>Linear Algebra</li>
+            <li>Topology</li>
+            <li>Functional Analysis</li>
+            <li>Measure Theory</li>
+            <li>Algebraic Topology</li>
+        </ul>
+    </li>
+</ul>
+<br>
+<h3>Literature Background</h3>
+<p>Once deeply enthusiastic about literature, I have read and written poems and stories in Bengali and English. My book <a href="https://amzn.in/d/6zU2fgt" style="text-decoration: underline; color: inherit; cursor: pointer; transition: transform 0.2s ease-in-out;" onmouseover="this.style.transform='scale(1.1)'" onmouseout="this.style.transform='scale(1)'">"Silhouette Of Words"</a> is available on Amazon.</p>
+<br>
+<h3>Philosophy About Life and Goals</h3>
+<p>With a forward-thinking mindset, I strive to bridge the gap between <strong>mathematical theory and real-world applications</strong> through innovative software solutions. My goal is to contribute to academia and industry by leveraging my expertise in <strong>mathematics and software engineering</strong>.</p>
+<p>I keep learning new skills and also forgetting old ones. Never mind. The much I can learn from this world is my goal, and I love it.</p>
+<hr>

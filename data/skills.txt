@@ -1,0 +1,11 @@
+<ul>
+    <li>✅<strong>Mathematics:</strong> Analysis, Number Theory, Algebra</li>
+    <li>✅<strong>Programming Languages:</strong> C++, Python, Ruby</li>
+    <li>✅<strong>Android Development:</strong> Jetpack Compose, Hilt, Local Databases</li>
+    <li>✅<strong>Software Projects:</strong> Chat Apps, Auto-reply Systems, PDF Conversions, 3D Simulations</li>
+    <li>✅<strong>Networking & Communication:</strong> Internet-based App Connectivity</li>
+    <li>✅<strong>Teaching & Mentorship:</strong> C++ and Mobile App Development</li>
+    <li>✅<strong>Automation:</strong> WhatsApp Auto-replies, File Handling, Data Processing</li>
+</ul>
+
+<br>I am always eager to explore new research opportunities, engage in collaborative projects, and take on challenges that merge <strong>mathematics with cutting-edge technology</strong>
